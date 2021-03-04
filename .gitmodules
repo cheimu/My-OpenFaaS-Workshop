@@ -1,0 +1,3 @@
+[submodule "lab2/workshop"]
+	path = lab2/workshop
+	url = https://github.com/openfaas/workshop
