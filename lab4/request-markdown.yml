@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  request-markdown:
+    lang: python3
+    handler: ./request-markdown
+    image: cheimu/request-markdown:latest
+
