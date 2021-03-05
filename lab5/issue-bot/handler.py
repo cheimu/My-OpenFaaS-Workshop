@@ -14,8 +14,8 @@ def handle(req):
 
     # Here is a problem not solved:
     # The first webhook will always timeout, then when try redelivery
-    # the issue will sucessully be labeled (which means this if should be bypassed)
-    # but the response of packet is error 500 Action not supported: labeled
+    # the issue will sucessully be labeled 
+    # but the response of packet is error 500 Can't reach service for: issue-bot.
     if not payload["action"] == "opened":
         sys.exit("Action not supported: " + payload["action"])
         return
