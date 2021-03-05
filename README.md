@@ -6,6 +6,6 @@ My Environment: <br>
 * Docker: 3.1.0
 * Kubernetes: 1.19.3 
 * Single-node cluster
-*  * MacBook Air (11-inch, Early 2015)
-*  * 1.6 GHz Intel Core i5
-*  * 8 GB 1600 MHz DDR3
+  * MacBook Air (11-inch, Early 2015)
+  * 1.6 GHz Intel Core i5
+  * 8 GB 1600 MHz DDR3
