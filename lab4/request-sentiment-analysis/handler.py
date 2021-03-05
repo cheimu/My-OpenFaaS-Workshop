@@ -8,11 +8,12 @@ def handle(req):
         req (str): request body
     """
 
-    #gateway_hostname = os.getenv("gateway_hostname", "gateway") # uses a default of "gateway" for when "gateway_hostname" is not set
+    gateway_hostname = os.getenv("gateway_hostname", "gateway") # uses a default of "gateway" for when "gateway_hostname" is not set
 
     test_sentence = req
 
-    r = requests.get("http://127.0.0.1:8080/function/sentimentanalysis", data= test_sentence)
+    r = requests.get("http://" + gateway_hostname + ".openfaas:8080/function/sentimentanalysis", data= test_sentence)
+    #r = requests.get("http://gateway.openfaas:8080/function/sentimentanalysis", data= test_sentence)
 
     if r.status_code != 200:
         sys.exit("Error with sentimentanalysis, expected: %d, got: %d\n" % (200, r.status_code))
