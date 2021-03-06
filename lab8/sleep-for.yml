@@ -1,0 +1,18 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  sleep-for:
+    lang: python3
+    handler: ./sleep-for
+    image: cheimu/sleep-for:latest
+    environment:
+      gateway_hostname: "gateway.openfaas"
+      sleep_duration: 2
+      read_timeout: "5s"
+      write_timeout: "5s"
+      exec_timeout: "5s"
+      
+    
+
