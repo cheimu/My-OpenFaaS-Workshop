@@ -4,3 +4,6 @@
 [submodule "lab9/lab9/echo-fn"]
 	path = lab9/lab9/echo-fn
 	url = https://github.com/alexellis/echo-fn
+[submodule "lab9/echo-fn"]
+	path = lab9/echo-fn
+	url = https://github.com/alexellis/echo-fn
