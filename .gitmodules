@@ -1,3 +1,6 @@
 [submodule "lab2/workshop"]
 	path = lab2/workshop
 	url = https://github.com/openfaas/workshop
+[submodule "lab9/lab9/echo-fn"]
+	path = lab9/lab9/echo-fn
+	url = https://github.com/alexellis/echo-fn
